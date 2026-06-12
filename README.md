@@ -58,15 +58,16 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 ```
 
 ## COMO EXECUTAR O PROJETO 📂 ##
-1 - Clone o repositório;
-2 - Execute o script SQL; 
-3 - Abra o arquivo 'conFactory' e verifique se as credenciais precisam ser alteradas;
+
+1. Clone o repositório;
+2.  Execute o script SQL; 
+3.  Abra o arquivo 'conFactory' e verifique se as credenciais precisam ser alteradas;
 ```
     private static final String url = "jdbc:mysql://localhost:3306/agendatelefonica";
     private static final String user = "root";
     private static final String password = " ";
 ```
-4 - Verifique se o Driver está adicionado na biblioteca do projeto (Classpath);
-5 - Execute o projeto através da classe 'AgendaTeste'.
+4.  Verifique se o Driver está adicionado na biblioteca do projeto (Classpath);
+5.  Execute o projeto através da classe 'AgendaTeste'.
 
 Projeto desenvolvido por : Thallya
