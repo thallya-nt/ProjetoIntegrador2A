@@ -69,14 +69,19 @@ public class AgendaTeste {
         System.out.println("||||| OPÇÃO 1 --> ADICINAR NOVO CONTATO |||||");
         System.out.println( "NOME:" );
         String nome = scan.nextLine();
-        System.out.println( "TELEFONE: ");
-        String telefone = scan.nextLine();
-        System.out.println(" EMAIL: ");
-        String email = scan.nextLine();
+        if (agendaTelefonica.buscarContato(nome) != null){
+            System.out.println("ESSE NOME JÁ EXISTE.");
+        } else {
+            System.out.println("TELEFONE: ");
+            String telefone = scan.nextLine();
+            System.out.println(" EMAIL: ");
+            String email = scan.nextLine();
 
-        Contato novoContato = new Contato(nome, telefone, email);
-        agendaTelefonica.adcionarContato(novoContato);
-        System.out.println("NOVO CONTATO ADICIONADO! "+ nome + "✅");
+            Contato novoContato = new Contato(nome, telefone, email);
+            agendaTelefonica.adcionarContato(novoContato);
+            System.out.println("NOVO CONTATO ADICIONADO! " + nome + "✅");
+        }
+
     }
 
     private void atualizarContato(){
