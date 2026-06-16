@@ -17,11 +17,11 @@ sendo responsável por abrir e fechar as conexões de forma segura.
 * **Regras de Negócio/Main:** Manipulação dos dados e interface via terminal/console ('AgendaTeste.java').
 
 ## SCRIPT SQL (MySQL)📄 ##
-*  você pode baixar o script através desse link: [scriptSQL.sql](https://github.com/user-attachments/files/28877032/scriptSQL.sql)
+*  você pode baixar o script através desse link:[scriptSQL.sql](https://github.com/user-attachments/files/29021858/scriptSQL.sql)
 ou copiar o código abaixo:
 
 ```
-   -- MySQL Workbench Forward Engineering
+-- MySQL Workbench Forward Engineering
 
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
@@ -45,16 +45,17 @@ CREATE TABLE IF NOT EXISTS `agendaTelefonica`.`contato` (
   `nome` VARCHAR(45) NOT NULL,
   `telefone` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
-  UNIQUE INDEX `idcontato_UNIQUE` (`idcontato` ASC) VISIBLE,
+  UNIQUE INDEX `idcontato_UNIQUE` (`idcontato` ASC) ,
   PRIMARY KEY (`idcontato`),
-  UNIQUE INDEX `nome_UNIQUE` (`nome` ASC) VISIBLE,
-  UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE)
+  UNIQUE INDEX `nome_UNIQUE` (`nome` ASC),
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC) )
 ENGINE = InnoDB;
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
 ```
 
 ## DUMP DO BANCO DE DADOS ⬇️ ##
